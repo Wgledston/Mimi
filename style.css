@@ -21,9 +21,25 @@ body {
     color: rgb(98, 255, 0);
     margin: 20px;
     padding: 20px;
-    font-family: 'Danfo', sans-serif;
-    font-size: medium
   }
-  h3{
+  p{
     font-family: 'Lexend', sans-serif;
+    font-size: 60px;
+  }
+  .heart {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-image: url('coracao.png'); /* Define a imagem do coração */
+    background-size: cover;
+    animation: fall 2s ease-in-out infinite;
+  }
+  
+  @keyframes fall {
+    0% {
+      top: 0;
+    }
+    100% {
+      top: 100vh;
+    }
   }
