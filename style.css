@@ -24,7 +24,12 @@ body {
   }
   p{
     font-family: 'Lexend', sans-serif;
-    font-size: 60px;
+    font-size: 40px;
+  }
+  h2{
+    font-family: 'Lexend', sans-serif;
+    font-size: 20px;
+    color: rgb(221, 184, 255);
   }
   .heart {
     position: absolute;
@@ -42,4 +47,12 @@ body {
     100% {
       top: 100vh;
     }
+  }
+  span{
+    color: rgb(255, 157, 0);
+  }
+  .agradece{
+    text-align: center;
+    margin: auto;
+    padding: 100px;
   }
