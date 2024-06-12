@@ -1,0 +1,28 @@
+body {
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+    font-size: 500%;
+    background-color: #9c02ef;
+
+  }
+  .mimi{
+    color: rgb(226, 208, 1);
+    margin: 20px;
+    padding: 20px;
+    font-family: 'Danfo', sans-serif;
+  }
+  .fotomimi img {
+    width: 200px;
+    height: auto;
+  }
+  .msg{
+    color: rgb(98, 255, 0);
+    margin: 20px;
+    padding: 20px;
+    font-family: 'Danfo', sans-serif;
+  }
+  h3{
+    font-family: 'Lexend', sans-serif;
+  }
