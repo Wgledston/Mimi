@@ -5,10 +5,12 @@ body {
     align-items: center;
     font-size: 500%;
     background-color: #9c02ef;
+    justify-items: center;
+
 
   }
   .mimi{
-    color: rgb(226, 208, 1);
+    color: rgb(255, 136, 0);
     margin: 20px;
     padding: 20px;
     font-family: 'Danfo', sans-serif;
@@ -55,4 +57,9 @@ body {
     text-align: center;
     margin: auto;
     padding: 100px;
+  }
+  section{
+    margin: auto;
+    align-items: center;
+    text-align: center;
   }
