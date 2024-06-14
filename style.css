@@ -1,58 +1,169 @@
 body {
-    margin: 20px;
-    padding: 20px;
-    text-align: center;
-    align-items: center;
-    font-size: 500%;
-    background-color: #9c02ef;
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+  align-items: center;
+  font-size: 500%;
+  background-color: #9c02ef;
+  overflow-x: hidden;
+}
 
+.mimi {
+  color: rgb(226, 208, 1);
+  margin: 20px;
+  padding: 20px;
+  font-family: 'Danfo', sans-serif;
+}
+
+.fotomimi img {
+  width: 200px;
+  height: auto;
+}
+
+.msg {
+  color: rgb(98, 255, 0);
+  margin: 20px;
+  padding: 20px;
+}
+
+p {
+  font-family: 'Lexend', sans-serif;
+  font-size: 40px;
+}
+
+h2 {
+  font-family: 'Lexend', sans-serif;
+  font-size: 20px;
+  color: rgb(221, 184, 255);
+}
+
+.heart {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-image: url('coracao.png'); /* Define a imagem do coração */
+  background-size: cover;
+  animation: fall 2s ease-in-out infinite;
+  left: calc(50% - 10vw + 20vw * var(--position)); /* Limita a variação horizontal */
+}
+
+@keyframes fall {
+  0% {
+    top: 0;
   }
-  .mimi{
-    color: rgb(226, 208, 1);
-    margin: 20px;
-    padding: 20px;
-    font-family: 'Danfo', sans-serif;
+  100% {
+    top: 100vh;
   }
-  .fotomimi img {
-    width: 200px;
-    height: auto;
+}
+
+span {
+  color: rgb(255, 111, 0);
+}
+
+.agradece {
+  text-align: center;
+  margin: auto;
+  padding: 100px;
+}
+
+/* Responsividade */
+@media (max-width: 1200px) {
+  .msg p {
+    font-size: 1.1rem;
   }
-  .msg{
-    color: rgb(98, 255, 0);
-    margin: 20px;
-    padding: 20px;
+
+  .agradece {
+    padding: 50px;
   }
-  p{
-    font-family: 'Lexend', sans-serif;
-    font-size: 40px;
+
+  .agradece h2 {
+    font-size: 1.3rem;
   }
-  h2{
-    font-family: 'Lexend', sans-serif;
-    font-size: 20px;
-    color: rgb(221, 184, 255);
+}
+
+@media (max-width: 992px) {
+  .mimi h1 {
+    font-size: 2.5rem;
   }
+
+  .msg p {
+    font-size: 1rem;
+  }
+
+  .agradece h2 {
+    font-size: 1.2rem;
+  }
+
   .heart {
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    background-image: url('coracao.png'); /* Define a imagem do coração */
-    background-size: cover;
-    animation: fall 2s ease-in-out infinite;
+    left: calc(50% - 20vw + 40vw * var(--position)); /* Ajusta a variação horizontal */
   }
-  
-  @keyframes fall {
-    0% {
-      top: 0;
-    }
-    100% {
-      top: 100vh;
-    }
+}
+
+@media (max-width: 768px) {
+  .mimi h1 {
+    font-size: 2rem;
   }
-  span{
-    color: rgb(255, 157, 0);
+
+  .msg p {
+    font-size: 0.9rem;
   }
-  .agradece{
-    text-align: center;
-    margin: auto;
-    padding: 100px;
+
+  .agradece h2 {
+    font-size: 1rem;
   }
+
+  .heart {
+    left: calc(50% - 30vw + 60vw * var(--position)); /* Ajusta a variação horizontal */
+  }
+}
+
+@media (max-width: 576px) {
+  .mimi h1 {
+    font-size: 1.5rem;
+  }
+
+  .msg {
+    padding: 15px;
+  }
+
+  .msg p {
+    font-size: 0.8rem;
+  }
+
+  .agradece h2 {
+    font-size: 0.9rem;
+  }
+
+  .heart {
+    left: calc(50% - 40vw + 80vw * var(--position)); /* Ajusta a variação horizontal */
+  }
+}
+
+@media (max-width: 500px) {
+  body {
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  p, h2 {
+    font-size: medium;
+  }
+
+  .agradece {
+    padding: 30px;
+  }
+
+  .msg {
+    padding: 10px;
+  }
+
+  .foto img {
+    width: 150px; /* Define a largura da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+  }
+
+  .heart {
+    left: calc(50% - 45vw + 90vw * var(--position)); /* Ajusta a variação horizontal */
+  }
+}
