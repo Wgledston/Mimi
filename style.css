@@ -159,7 +159,7 @@ span {
   }
 
   .foto img {
-    width: 150px; /* Define a largura da imagem */
+    width: 100px; /* Define a largura da imagem */
     height: auto; /* Mantém a proporção da imagem */
   }
 
