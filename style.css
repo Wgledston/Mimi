@@ -4,24 +4,24 @@ body {
   text-align: center;
   align-items: center;
   font-size: 500%;
-  background-color: #9c02ef;
+  background-color: #8cff86;
   overflow-x: hidden;
 }
 
 .mimi {
-  color: rgb(226, 208, 1);
+  color: rgb(179, 0, 255);
   margin: 20px;
   padding: 20px;
   font-family: 'Danfo', sans-serif;
 }
 
 .fotomimi img {
-  width: 200px;
+  width: 500px;
   height: auto;
 }
 
 .msg {
-  color: rgb(98, 255, 0);
+  color: rgb(49, 1, 67);
   margin: 20px;
   padding: 20px;
 }
@@ -34,7 +34,7 @@ p {
 h2 {
   font-family: 'Lexend', sans-serif;
   font-size: 20px;
-  color: rgb(221, 184, 255);
+  color: rgb(59, 54, 1);
 }
 
 .heart {
@@ -57,7 +57,7 @@ h2 {
 }
 
 span {
-  color: rgb(255, 111, 0);
+  color: rgb(94, 86, 0);
 }
 
 .agradece {
