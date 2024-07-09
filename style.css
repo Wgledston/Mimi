@@ -3,8 +3,8 @@ body {
   padding: 20px;
   text-align: center;
   align-items: center;
-  font-size: 500%;
-  background-color: #8cff86;
+
+  background-color: #eeff00;
   overflow-x: hidden;
 }
 
@@ -12,6 +12,7 @@ body {
   color: rgb(179, 0, 255);
   margin: 20px;
   padding: 20px;
+  font-size: 500%;
   font-family: 'Danfo', sans-serif;
 }
 
@@ -21,20 +22,22 @@ body {
 }
 
 .msg {
-  color: rgb(49, 1, 67);
+  color: rgb(49, 0, 79);
   margin: 20px;
   padding: 20px;
+
 }
 
 p {
   font-family: 'Lexend', sans-serif;
-  font-size: 40px;
+  font-size: 2rem !important; /* ou qualquer tamanho desejado */
 }
+
 
 h2 {
   font-family: 'Lexend', sans-serif;
   font-size: 20px;
-  color: rgb(59, 54, 1);
+  color: rgb(255, 0, 0);
 }
 
 .heart {
@@ -64,6 +67,59 @@ span {
   text-align: center;
   margin: auto;
   padding: 100px;
+}
+.agradece img{
+
+  width: 50%;
+}
+.carrousel img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* ou 'contain' se preferir que toda a imagem seja visível mesmo que deixe espaços vazios */
+}
+
+.carousel {
+  position: relative;
+  width: 80%;
+  max-width: 600px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.carousel-inner {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+  min-width: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.carousel-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0);
+  color: rgba(136, 0, 255, 0);
+  padding: 5px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
 }
 
 /* Responsividade */
